@@ -1,0 +1,26 @@
+jane.vaughan@noramatsu.com
+
+1.
+
+Azure Resource Group:
+YSC-Lab
+
+monkey@janevaughannoramatsu.onmicrosoft.com
+
+Temp Pwd: Faka5961
+
+
+2.
+
+Local Account VMs (server & Workstation)
+
+Username: Monkey
+
+Temp Pwd: T-emp-0925!
+
+T-emp-0923!
+
+20.187.35.167
+
+
+https://portal.azure.com/?feature.tokencaching=true&feature.internalgraphapiversion=true#@janevaughannoramatsu.onmicrosoft.com/resource/subscriptions/ed77a2d7-666b-4c8e-9afb-d31c7e75c5c0/resourceGroups/YSC-Lab/providers/Microsoft.Compute/virtualMachines/Dental-Workstation-W11/overview
