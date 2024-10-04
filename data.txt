@@ -20,7 +20,13 @@ Temp Pwd: T-emp-0925!
 
 T-emp-0923!
 
+yscadmin1234!
+
 20.187.35.167
 
 
 https://portal.azure.com/?feature.tokencaching=true&feature.internalgraphapiversion=true#@janevaughannoramatsu.onmicrosoft.com/resource/subscriptions/ed77a2d7-666b-4c8e-9afb-d31c7e75c5c0/resourceGroups/YSC-Lab/providers/Microsoft.Compute/virtualMachines/Dental-Workstation-W11/overview
+
+Middle Payment: Encrypt the data and document the encryption process and set up, test and the cloud backup process
+Final Payment: Simulate the disaster recovery, restore the data on a new server, and
+document the process and submit final documentation and testing report for review 

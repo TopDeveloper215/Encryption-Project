@@ -1,0 +1,58 @@
+Okay. So are you saying that when a file is encrypted using EFS, the device with the encryption certificate can decrypt the data and copy the data to a different device unencrypted?
+
+Javaugh, [9/26/2024 4:07 PM]
+Okay. That was what I was afraid of. Thank you for testing it and confirming it.
+
+Javaugh, [9/26/2024 4:09 PM]
+I had thought about using bitlocker, but I was afraid that for bitlocker, when I am trying to recover the data from backup, it may not allow me to recover only certain folders, and only allow me to recover the entire backup.
+
+Javaugh, [9/26/2024 4:09 PM]
+Do you know any other backup software that can do file/folder encryption better than EFS?
+
+Yes, it needs to be decrypt on another server during disaster recovery, as long as the user has the encryption key.  I am okay with that. I just have to keep the encryption key safe.
+
+What I want to be able to do is to recover only the databases and other dental x-rays and such from backup ... without need to recover the whole disk. Does that make sense?
+
+If Bitlocker can let me do that, we can use Bitlocker.
+
+I am thinking .... if Bitlocker will not allow me recover only the folders that I need, and you cannot find a better encryption software to replace EFS, then we would have to go with bitlocker.
+
+But I will do some research too.
+
+Javaugh, [9/26/2024 6:40 PM]
+Just to clarify your test procedure ... did you copy the demo database folder from the Windows 2019 Server encrypted or unencrypted to your VMware virtual machine?
+
+Javaugh, [9/26/2024 7:23 PM]
+Okay, yes. I did a simple test myself with just an EFS encrypted text file on the Windows 2019 Server.
+
+I encrypted the file and copied over to my Google drive, and it copied over unencrypted.
+
+Bitlocker is a bit different on a physical server versus an Azure VM server. To test on the Azure Windows 2019 Server VM, I have to use Azure KMS, which I'm not familiar with. So I don't have a good way to test on a physical server. Most dental clinics have a physical server. So I'm currently researching other encryption software.
+
+Let's see if there are good options.
+
+Javaugh, [9/26/2024 9:51 PM]
+According to my research, any data in an decrypted state while being used, can be copied unencrypted to a different device. It is only encrypted at rest, not while in use. Even Bitlocker. So if the dental software is accessing the database, the database is in a decrypted state. In this state, the only way to prevent it from being taken out of the server is to use a firewall to prevent outbound transfer or an application control software to prevent the execution of data transfer tools or some type of DLP controls to prevent copying to a personal network storage or cloud storage.
+
+Javaugh, [9/26/2024 9:51 PM]
+Let me know if your research is different.
+Yes. Database-level encryption may be the right way to go. I will start reading more about that. Thanks!
+
+Javaugh, [9/26/2024 10:18 PM]
+But it needs to be decrypted in a disaster recovery situation where a new server needs to be built and the database needs to be restored.
+
+Javaugh, [9/26/2024 10:19 PM]
+I know you already understand that. Just wanted to be clear 😊
+
+Javaugh, [9/26/2024 10:28 PM]
+Thanks for all the research and testing you are doing.
+
+
+Please explain to your friend.
+
+While EFS encrypts data to ensure that it can only be accessed by authorized users, it does not protect the encrypted files from being copied or moved to other locations. The files remain encrypted on disk, but once they are moved to another system or a user with access to the encryption key, they can be decrypted by the same authorized user.
+
+
+
+
+
