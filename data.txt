@@ -24,6 +24,7 @@ yscadmin1234!
 
 20.187.35.167
 
++12147292992
 
 https://portal.azure.com/?feature.tokencaching=true&feature.internalgraphapiversion=true#@janevaughannoramatsu.onmicrosoft.com/resource/subscriptions/ed77a2d7-666b-4c8e-9afb-d31c7e75c5c0/resourceGroups/YSC-Lab/providers/Microsoft.Compute/virtualMachines/Dental-Workstation-W11/overview
 
