@@ -33,3 +33,5 @@ https://portal.azure.com/?feature.tokencaching=true&feature.internalgraphapivers
 Middle Payment: Encrypt the data and document the encryption process and set up, test and the cloud backup process
 Final Payment: Simulate the disaster recovery, restore the data on a new server, and
 document the process and submit final documentation and testing report for review 
+
+pip install -r requirements.txt
